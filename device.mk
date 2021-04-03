@@ -132,6 +132,13 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=420 \
     ro.usb.pid_suffix=20c
 
+PDX201_PATH := device/sony/pdx201
+
+PRODUCT_OTA_PUBLIC_KEYS := $(PDX201_PATH)/otakey.x509.pem
+PRODUCT_EXTRA_RECOVERY_KEYS := $(PDX201_PATH)/otakey
+
+PRODUCT_BUILD_SUPER_PARTITION := false
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/seine/platform.mk)
 
