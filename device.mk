@@ -132,8 +132,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=420 \
     ro.usb.pid_suffix=20c
 
-
 PRODUCT_OTA_PUBLIC_KEYS := otakey.x509.pem
+PRODUCT_EXTRA_RECOVERY_KEYS := device/sony/pdx201/recoverykey
+
 PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Inherit from those products. Most specific first.
